@@ -4,8 +4,8 @@
 # the maximum value specified for Puma. Default is set to 5 threads for minimum
 # and maximum; this matches the default thread size of Active Record.
 #
-path_to_key="C:/Users/Costin/Desktop/Workspaces/android-spyware/server.key"
-path_to_cert="C:/Users/Costin/Desktop/Workspaces/android-spyware/server.crt"
+path_to_key="/etc/letsencrypt/keys/0000_key-certbot.pem"
+path_to_cert="/etc/letsencrypt/csr/0000_csr-certbot.pem"
 #if ENV.fetch("RAILS_ENV") == 'development'
 #  ssl_bind '127.0.0.1', '3000', {
 #    key: path_to_key,
@@ -15,7 +15,7 @@ path_to_cert="C:/Users/Costin/Desktop/Workspaces/android-spyware/server.crt"
 #end
 
 
-max_threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
+max_threads_count = ENV.fetch("RAILS_MAX_THREADS") { 75 }
 min_threads_count = ENV.fetch("RAILS_MIN_THREADS") { max_threads_count }
 threads min_threads_count, max_threads_count
 
