@@ -4,9 +4,9 @@ default: &default
 #rails_port: port to run rails server
   rails_port: 3000
 #malware_ip: ip address for malware connection
-  malware_ip: 0.0.0.0
+  malware_ip: 95.217.181.170
 #malware_port: port for malware connection
-  malware_port: 4444
+  malware_port: 3124
 #msfrpcd_ip: ip address for metasploit RPC daemon
   msfrpcd_ip: 0.0.0.0
 #msfrpcd_port: port for metasploit RPC daemon
@@ -16,9 +16,9 @@ default: &default
 #use_ssl: true/false
   use_ssl: false
 #cert_path: path to ssl certificate
-  cert_path: certificate.cert
+  cert_path: /etc/letsencrypt/csr/0000_csr-certbot.pem
 #key_path: path to ssl key
-  cert_key: key.key
+  cert_key: /etc/letsencrypt/keys/0000_key-certbot.pem
 #ca_cert_path: path to certificate authority certificate
   ca_cert_path: ca_cert.cert
   
